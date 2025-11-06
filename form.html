@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MOBILE APP</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="nav">
+    <h1 id="formTitle">➕ ADD CONTACT</h1>
+  </nav>
+<!-- .................form....... -->
+  <div class="form-container">
+    <form id="contactForm" onsubmit="saveContact(event)">
+      <label for="firstName">First Name</label>
+      <input type="text" id="firstName" placeholder="First Name" required />
+      
+      <label for="lastName">Last Name</label>
+      <input type="text" id="lastName" placeholder="Last Name" required />
+      
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" placeholder="Phone Number" required />
+      
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="Email Address" required />
+
+      <div class="form-buttons">
+        <button type="submit">💾 UPDATE</button>
+        <button type="button" onclick="cancel()">❌ BACK</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

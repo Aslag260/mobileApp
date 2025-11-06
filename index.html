@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Mobile App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ........Nav ba....... -->
+  <nav class="nav">
+    <h1>MOBILE APP</h1>
+    <button onclick="window.location.href='form.html'">➕ ADD CONTACT</button>
+  </nav>
+
+  <div class="controls">
+    <input type="text" id="search" placeholder="🔍 Search by name..." onkeyup="searchContacts()" />
+    <select id="sort" onchange="sortContacts()">
+      <option value="asc">Sort A → Z</option>
+      <option value="desc">Sort Z → A</option>
+    </select>
+  </div>
+
+  <div id="contactList" class="contact-list"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
